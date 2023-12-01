@@ -1,0 +1,10 @@
+server.name: kibana
+server.host: "0.0.0.0"
+monitoring.ui.container.elasticsearch.enabled: true
+elasticsearch.hosts: [ "https://localhost:9200", "https://esnode1:9200" ]
+elasticsearch.username: kibana_system
+elasticsearch.password: elastic
+elasticsearch.ssl.certificateAuthorities: [ "/usr/share/kibana/config/certs/ca/ca.crt" ]
+#elasticsearch.ssl.certificateAuthorities: [ "/usr/share/kibana/config/certs/ca/ca.crt", "/usr/share/kibana/config/certs/esnode01/esnonde01.crt" ]
+logging.root.level: debug
+elasticsearch.ssl.verificationMode: certificate
